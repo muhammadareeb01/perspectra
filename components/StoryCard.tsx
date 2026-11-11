@@ -5,11 +5,22 @@ import { NewsImage } from './NewsImage';
 import { OutletTakeList } from './OutletTakeList';
 import type { Story } from '@/lib/types';
 
-export function StoryCard({ story, featured = false }: { story: Story; featured?: boolean }) {
+export function StoryCard({
+  story,
+  featured = false,
+  layout = 'vertical'
+}: {
+  story: Story;
+  featured?: boolean;
+  layout?: 'vertical' | 'horizontal';
+}) {
   const more = Math.max(0, story.outlets.length - 3);
+  const horizontal = layout === 'horizontal';
 
   return (
-    <article className={`story-card story-card--rich ${featured ? 'story-card--featured' : ''}`}>
+    <article
+      className={`story-card story-card--rich ${featured ? 'story-card--featured' : ''} ${horizontal ? 'story-card--horizontal' : ''}`}
+    >
       <div className="story-card__spectrum" aria-hidden="true" />
       <a
         href={story.article_url}
@@ -38,16 +49,24 @@ export function StoryCard({ story, featured = false }: { story: Story; featured?
           <Link href={`/story/${story.id}`}>{story.headline}</Link>
         </h3>
         <p className="story-card__summary">{story.summary}</p>
-        <StoryInsights story={story} compact />
-        <div className="story-card__signal story-card__signal--panel">
-          <StoryCoverage story={story} compact showCaption={false} />
+        <div className={`story-card__metrics${horizontal ? ' story-card__metrics--row' : ''}`}>
+          <StoryInsights story={story} compact />
+          <div className="story-card__signal story-card__signal--panel">
+            <StoryCoverage story={story} compact showCaption={false} />
+          </div>
         </div>
         <div className="story-card__takes">
           <div className="story-card__takes-head">
             <span className="story-card__takes-label">Channel takes</span>
             {more > 0 ? <span className="story-card__more">+{more} more</span> : null}
           </div>
-          <OutletTakeList outlets={story.outlets} reliability={story.reliability} limit={3} variant="stack" tile />
+          <OutletTakeList
+            outlets={story.outlets}
+            reliability={story.reliability}
+            limit={3}
+            variant={horizontal ? 'grid' : 'stack'}
+            tile
+          />
         </div>
         <Link className="button button--surface story-card__cta" href={`/story/${story.id}`}>
           Open full comparison

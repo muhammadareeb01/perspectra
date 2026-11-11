@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { stories } from '@/lib/data';
 import { dominantLean, getStoryCoverage } from '@/lib/coverage';
 import { blindspotEyebrow, pickBlindspotStories } from '@/lib/blindspot';
+import { pickHomeStories } from '@/lib/trending';
 import { StoryCoverage } from './StoryCoverage';
 import { NewsImage } from './NewsImage';
 import { Reveal } from './Reveal';
@@ -13,13 +14,12 @@ import { StoryCard } from './StoryCard';
 import { HeroCarousel } from './HeroCarousel';
 import { ProductFaq } from './ProductFaq';
 import { HomeStepBridge } from './HomeStepBridge';
-import { HomeMoreLinks } from './HomeMoreLinks';
 
 const HOME_CLUSTER_LIMIT = 6;
 
 export function HomeClient() {
-  const featured = stories[0];
-  const homeClusters = stories.slice(0, HOME_CLUSTER_LIMIT);
+  const homeClusters = pickHomeStories(stories, HOME_CLUSTER_LIMIT);
+  const featured = homeClusters[0] ?? stories[0];
   const blindspotStories = pickBlindspotStories(stories, 3);
   const left = featured.outlets.find((outlet) => outlet.lean === 'left') || featured.outlets[0];
   const center = featured.outlets.find((outlet) => outlet.lean === 'center') || featured.outlets[1];
@@ -62,10 +62,10 @@ export function HomeClient() {
             ) : null
           }
         />
-        <div className="story-grid">
+        <div className="story-grid story-grid--compare">
           {homeClusters.map((story, index) => (
             <Reveal key={story.id} delay={index * 60}>
-              <StoryCard story={story} />
+              <StoryCard story={story} layout="horizontal" />
             </Reveal>
           ))}
         </div>
@@ -153,8 +153,6 @@ export function HomeClient() {
         </div>
       </div>
     </section>
-
-    <HomeMoreLinks />
 
     <ProductFaq />
   </>

@@ -195,5 +195,49 @@
     "bias": { "left": 22, "center": 38, "right": 40 },
     "posted": "just now",
     "reliability": { "BBC": "High", "CNN": "High", "Fox News": "Mixed", "Reuters": "High", "NY Post": "Mixed" }
+  },
+  {
+    "id": 10,
+    "topic": "Poland · Wrocław",
+    "trending": true,
+    "headline": "Kidnapping chase ends in tram crash; victim dies in Wrocław",
+    "summary": "After a midnight kidnapping report, police pursued a car through southwestern Poland. The driver ran a red light, hit an empty tram, and a 34-year-old man found in the trunk died in hospital.",
+    "image_url": "https://images.unsplash.com/photo-1544620307-c71203d6dcb1?w=1200&q=80",
+    "image_credit": "Polskie Radio / PAP",
+    "image_keywords": "tram city night europe",
+    "article_url": "https://www.polskieradio.pl/395/7789/artykul/3612773,tragic-police-chase-in-southwestern-poland-ends-as-kidnapped-man-killed-in-cartram-collision",
+    "outlets": [
+      {
+        "name": "BBC",
+        "lean": "center",
+        "headline": "Man dies after car hits tram during police chase in Poland",
+        "article_url": "https://www.bbc.com/news/world-europe",
+        "framing": { "left": 22, "center": 58, "right": 20 }
+      },
+      {
+        "name": "Reuters",
+        "lean": "center",
+        "headline": "Kidnapped man dies after crash with tram in Polish city",
+        "article_url": "https://www.reuters.com/world/europe/",
+        "framing": { "left": 26, "center": 54, "right": 20 }
+      },
+      {
+        "name": "CNN",
+        "lean": "left",
+        "headline": "Fatal tram collision follows dramatic kidnapping pursuit in Wrocław",
+        "article_url": "https://edition.cnn.com/world/europe/poland",
+        "framing": { "left": 62, "center": 28, "right": 10 }
+      },
+      {
+        "name": "Fox News",
+        "lean": "right",
+        "headline": "Police chase in Poland ends in deadly crash with tram",
+        "article_url": "https://www.foxnews.com/world",
+        "framing": { "left": 12, "center": 20, "right": 68 }
+      }
+    ],
+    "bias": { "left": 30, "center": 42, "right": 28 },
+    "posted": "1 hour ago",
+    "reliability": { "BBC": "High", "Reuters": "High", "CNN": "High", "Fox News": "Mixed" }
   }
 ]

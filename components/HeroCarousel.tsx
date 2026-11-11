@@ -68,11 +68,13 @@ function buildSlides(stories: Story[], wire: WireArticle[]): HeroSlide[] {
   }
 
   const list = [...byUrl.values()];
-  const hegseth = list.find((slide) => /hegseth|impeach|trump/i.test(slide.headline));
-  if (hegseth) {
-    return [hegseth, ...list.filter((slide) => slide.key !== hegseth.key)].slice(0, 5);
-  }
-  return list.slice(0, 5);
+  const pin = (pred: (slide: HeroSlide) => boolean) => list.find(pred);
+  const trump = pin((slide) => /hegseth|impeach|trump/i.test(slide.headline));
+  const poland = pin((slide) => /kidnap|tram|wrocław|wroclaw|poland/i.test(slide.headline));
+  const pinned = [trump, poland].filter(Boolean) as HeroSlide[];
+  const pinnedKeys = new Set(pinned.map((slide) => slide.key));
+  const rest = list.filter((slide) => !pinnedKeys.has(slide.key));
+  return [...pinned, ...rest].slice(0, 5);
 }
 
 export function HeroCarousel({ stories }: { stories: Story[] }) {

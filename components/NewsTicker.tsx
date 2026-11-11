@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { stories } from '@/lib/data';
+import { pickHomeStories } from '@/lib/trending';
 import type { WireArticle } from '@/lib/rss';
 
 type TickerItem = {
@@ -10,7 +11,7 @@ type TickerItem = {
 };
 
 function seedFromStories(): TickerItem[] {
-  return stories.slice(0, 10).map((story) => ({
+  return pickHomeStories(stories, 10).map((story) => ({
     headline: story.headline,
     article_url: story.article_url
   }));
