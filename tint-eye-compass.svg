@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+  <defs>
+    <clipPath id="eye">
+      <path d="M7 28C14 13 42 13 49 28C42 43 14 43 7 28Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#eye)">
+    <rect width="56" height="56" fill="#F7F7F8"/>
+    <path d="M28 28L23.81 16.25A12.5 12.5 0 0 1 35.56 26.94Z" fill="#2F5FD0"/>
+    <path d="M28 28L35.56 26.94A12.5 12.5 0 0 1 24.19 39.75Z" fill="#3D9A6A"/>
+    <path d="M28 28L24.19 39.75A12.5 12.5 0 0 1 23.81 16.25Z" fill="#D0392F"/>
+    <circle cx="28" cy="28" r="12.5" stroke="#E5E5E5" stroke-width="1.2"/>
+    <g transform="rotate(38 28 28)">
+      <path d="M28 15.5 31.4 28 28 25.8 24.6 28 28 15.5Z" fill="#2F5FD0"/>
+      <path d="M28 40.5 24.6 28 28 30.2 31.4 28 28 40.5Z" fill="#D0392F"/>
+    </g>
+    <circle cx="28" cy="28" r="2.8" fill="#111111"/>
+  </g>
+  <path d="M7 28C14 13 42 13 49 28C42 43 14 43 7 28Z" stroke="#111111" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M20 28C22 24 34 24 36 28" stroke="#111111" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,5 @@
+:HL["/perspectra/_next/static/chunks/1a9bzz_8s6qcv.css","style"]
+:HL["/perspectra/_next/static/chunks/38h5tog-hp_n6.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"KlWAe5VxGGSuYTXptlbAW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

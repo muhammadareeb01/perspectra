@@ -1,0 +1,35 @@
+1:"$Sreact.fragment"
+2:"/perspectra/_next/static/chunks/3qfy96eoyh-ek.js"
+3:"/perspectra/_next/static/chunks/2rhpxshjgamx-.js"
+4:"/perspectra/_next/static/chunks/2sj8zdw16idqw.js"
+5:"FirebaseAnalytics"
+6:I[66503,["$2","$3","$4"],"$5"]
+7:I[42364,["$2","$3","$4"],"SiteChrome"]
+8:I[39756,["$2","$3","$4"],"default"]
+9:I[37457,["$2","$3","$4"],"default"]
+10:"/perspectra/_next/static/chunks/0u_ncnilon212.js"
+11:I[31894,["$2","$3","$4","$10"],"SupportClient"]
+12:I[97367,["$2","$3","$4"],"OutletBoundary"]
+13:"$Sreact.suspense"
+16:"ViewportBoundary"
+17:I[97367,["$2","$3","$4"],"$16"]
+18:"MetadataBoundary"
+19:I[97367,["$2","$3","$4"],"$18"]
+1a:I[27201,["$2","$3","$4"],"IconMark"]
+:HL["/perspectra/_next/static/chunks/1a9bzz_8s6qcv.css","style"]
+:HL["/perspectra/_next/static/chunks/38h5tog-hp_n6.css","style"]
+b:X
+e:X
+e:C
+f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","section",null,{"className":"page-hero","children":["$","div",null,{"className":"shell page-hero__grid","children":[["$","div",null,{"children":[["$","span",null,{"className":"eyebrow","children":"Support"}],["$","h1",null,{"children":"Fund a wider comparison."}],["$","p",null,{"children":"Contributions help add publishers to the directory, improve story clustering, and keep bias bars and blindspots independent of ads."}]]}],["$","div",null,{"className":"page-hero__aside","children":[["$","strong",null,{"children":"More sources"}],["$","p",null,{"children":"Every unlock is another voice in the room when you compare coverage."}]]}]]}]}],["$","$L11",null,{}]],[["$","script","script-0",{"src":"/perspectra/_next/static/chunks/0u_ncnilon212.js","async":true}]],["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":"$@15","v":null,"s":"$b"}}]]
+c:[["children",{"s":"support","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}]}]]}],"p":"$@d","v":"$e","s":"$b"},"c":"$Qf"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/perspectra/_next/static/chunks/1a9bzz_8s6qcv.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/perspectra/_next/static/chunks/38h5tog-hp_n6.css","precedence":"next"}],["$","script","script-0",{"src":"/perspectra/_next/static/chunks/3qfy96eoyh-ek.js","async":true}],["$","script","script-1",{"src":"/perspectra/_next/static/chunks/2rhpxshjgamx-.js","async":true}],["$","script","script-2",{"src":"/perspectra/_next/static/chunks/2sj8zdw16idqw.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){try{var t=localStorage.getItem('tint-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){document.documentElement.dataset.theme='light';}})();"}}]}],["$","body",null,{"className":"EK5TKG_variable mWpAVW_variable J5l5LG_variable","children":[["$","$L6",null,{}],["$","$L7",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","template":["$","$L9",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]]}]]}]]}],"p":"$@a","v":null,"s":"$b"},"c":"$Qc"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$13",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Perspectra. Same story. Many lenses."}],["$","meta","1",{"name":"description","content":"Compare how different outlets cover the same story. Perspectra is an aggregator, not a publisher."}],["$","link","2",{"rel":"icon","href":"/perspectra/icon.png?icon.19yufoiv247b2.png","sizes":"324x229","type":"image/png"}],["$","link","3",{"rel":"icon","href":"/perspectra/icon.svg?icon.0ov0sex2xxwh7.svg","sizes":"any","type":"image/svg+xml"}],["$","$L1a","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1b","v":null,"s":"$b"}},"a":"$@1c","u":"$@1d","b":"KlWAe5VxGGSuYTXptlbAW"}
+14:null
+b:300
+1d:true
+b:C
+1c:0
+d:"$undefined"
+a:"$undefined"
+1b:"$undefined"
+15:"$undefined"
