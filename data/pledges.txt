@@ -1,0 +1,2 @@
+# Perspectra support pledges (tab-separated)
+# Columns: createdAt (UTC)	name	amountEUR

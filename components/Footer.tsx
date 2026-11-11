@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { brand } from '@/lib/brand';
 import { Logo } from './Logo';
+import { SupportUsLink } from './SupportUsLink';
 
 export function Footer() {
   return (
@@ -25,7 +26,8 @@ export function Footer() {
               <span className="footer-label">About</span>
               <Link href="/who-we-are">Who we are</Link>
               <Link href={brand.contactPath}>{brand.contactLabel}</Link>
-              <Link href="/support">Support us</Link>
+              <SupportUsLink />
+              <Link href="/funding">Funding list</Link>
             </div>
             <div>
               <span className="footer-label">Elsewhere</span>

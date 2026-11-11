@@ -1,0 +1,25 @@
+rules_version = '2';
+
+// Temporary public create-only pledges (view in Firebase Console).
+// Tighten read/update/delete before production payments.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /supportPledges/{pledgeId} {
+      allow create: if isValidPledge(request.resource.data);
+      allow read, update, delete: if false;
+    }
+  }
+}
+
+function isValidPledge(data) {
+  return data.keys().hasAll(['name', 'amountEur', 'currency', 'source'])
+    && data.name is string
+    && data.name.size() > 0
+    && data.name.size() <= 120
+    && data.amountEur is number
+    && data.amountEur > 0
+    && data.amountEur <= 1000000
+    && data.currency == 'EUR'
+    && data.source is string
+    && data.source.size() <= 80;
+}

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "deploy:firebase": "firebase deploy --only apphosting"
+    "deploy:firebase": "firebase deploy --only apphosting",
+    "deploy:firestore-rules": "firebase deploy --only firestore:rules"
   },
   "dependencies": {
     "@dicebear/collection": "^9.4.2",
