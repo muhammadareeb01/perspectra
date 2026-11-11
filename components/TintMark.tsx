@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import brandLogoImage from '@/public/brand-logo.png';
 
 type TintMarkProps = {
   size?: number;
@@ -18,7 +19,7 @@ export function TintMark({ size = 40, className = '', variant = 'icon' }: TintMa
 
   return (
     <Image
-      src="/brand-logo.png"
+      src={brandLogoImage}
       alt=""
       width={LOGO_WIDTH}
       height={LOGO_HEIGHT}

@@ -1,15 +1,20 @@
 /** @type {import('next').NextConfig} */
 const staticExport = process.env.STATIC_EXPORT === '1';
 
+const basePath = staticExport ? '/perspectra' : '';
+
 const nextConfig = {
   ...(staticExport
     ? {
         output: 'export',
-        basePath: '/perspectra',
-        assetPrefix: '/perspectra/',
+        basePath,
+        assetPrefix: `${basePath}/`,
         trailingSlash: true
       }
     : {}),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  },
   images: {
     unoptimized: staticExport,
     remotePatterns: [
