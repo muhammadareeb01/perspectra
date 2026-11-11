@@ -2363,6 +2363,31 @@ img { max-width: 100%; }
   letter-spacing: -.02em;
 }
 .progress-track--sm { height: 6px; }
+.funding-page-layout {
+  display: grid;
+  gap: 28px;
+}
+.funding-page-layout__title {
+  margin: 6px 0 8px;
+  font-family: var(--font-source-serif), Georgia, serif;
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.funding-page-layout__intro {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.funding-list-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 12px;
+}
+.funding-list-toolbar p { margin: 0; }
 .reward-table { width: 100%; border-collapse: collapse; }
 .reward-table th, .reward-table td { border-bottom: 1px solid var(--line); padding: 15px 8px; text-align: left; font-size: 13px; }
 .reward-table th { color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }

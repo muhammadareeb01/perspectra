@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { FundingGoalProgress } from '@/components/FundingGoalProgress';
 import { recordSupportPledge } from '@/lib/support-pledge';
 import { useCallback, useEffect, useId, useState } from 'react';
@@ -131,7 +132,13 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
                   disabled={submitting}
                 />
               </div>
-              <p className="support-pop__hint muted">No card charged yet — your pledge counts toward our €12,000 goal on Support.</p>
+              <p className="support-pop__hint muted">
+                No card charged yet — you will show on the{' '}
+                <Link href="/funding" className="text-link">
+                  funding list
+                </Link>{' '}
+                toward our €12,000 goal.
+              </p>
               <button type="submit" className="button button--dark support-pop__cta" disabled={!canSubmit}>
                 {submitting ? 'Saving…' : 'Submit'}
               </button>
@@ -161,7 +168,10 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
             <p className="support-pop__thanks-note muted">
               We will wire real payments soon. For now, tell a friend to open a cluster they would usually skip.
             </p>
-            <button type="button" className="button button--dark support-pop__cta" onClick={onClose}>
+            <Link className="button button--dark support-pop__cta" href="/funding" onClick={onClose}>
+              See who pledged
+            </Link>
+            <button type="button" className="button button--surface support-pop__cta" style={{ marginTop: 10 }} onClick={onClose}>
               Back to the news
             </button>
           </div>

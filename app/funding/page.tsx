@@ -1,20 +1,22 @@
-'use client';
+import { FundingPageClient } from '@/components/FundingPageClient';
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-
-/** Legacy URL — funding list lives on /support for now. */
-export default function FundingRedirectPage() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace('/support');
-  }, [router]);
-
+export default function FundingPage() {
   return (
-    <section className="page-section">
-      <div className="shell">
-        <p className="muted">Taking you to Support…</p>
-      </div>
-    </section>
+    <>
+      <section className="page-hero">
+        <div className="shell page-hero__grid">
+          <div>
+            <span className="eyebrow">Funding</span>
+            <h1>Who pitched in and how far we are.</h1>
+            <p>Public list of supporters plus progress toward our €12,000 goal.</p>
+          </div>
+          <div className="page-hero__aside">
+            <strong>Transparent</strong>
+            <p>Open the list after you pledge — no card charged in this demo.</p>
+          </div>
+        </div>
+      </section>
+      <FundingPageClient />
+    </>
   );
 }
