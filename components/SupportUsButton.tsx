@@ -5,7 +5,7 @@ import { SupportFundModal } from './SupportFundModal';
 
 type SupportUsButtonProps = {
   className?: string;
-  variant?: 'header' | 'nav';
+  variant?: 'header' | 'nav' | 'bar';
   onOpen?: () => void;
 };
 
@@ -25,6 +25,14 @@ export function SupportUsButton({ className = '', variant = 'header', onOpen }: 
     variant === 'nav' ? (
       <button type="button" className={`support-us-btn support-us-btn--nav ${className}`.trim()} onClick={show}>
         Fund us 💸
+      </button>
+    ) : variant === 'bar' ? (
+      <button
+        type="button"
+        className={`button button--dark support-us-btn support-us-btn--bar ${className}`.trim()}
+        onClick={show}
+      >
+        Fund us <span aria-hidden="true">💸</span>
       </button>
     ) : (
       <button

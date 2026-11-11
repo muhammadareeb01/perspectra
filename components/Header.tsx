@@ -30,16 +30,19 @@ export function Header({ scrolled = false }: { scrolled?: boolean }) {
         </nav>
         <ThemeToggle className="site-header__theme" />
         <SupportUsButton />
-        <button
-          className="menu-toggle"
-          type="button"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          onClick={() => setOpen((value) => !value)}
-        >
-          <span /> <span /> <span />
-          <span className="sr-only">Toggle navigation</span>
-        </button>
+        <div className="site-header__mobile-actions">
+          <SupportUsButton variant="bar" />
+          <button
+            className="menu-toggle"
+            type="button"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span /> <span /> <span />
+            <span className="sr-only">Toggle navigation</span>
+          </button>
+        </div>
       </div>
       <div id="mobile-nav" className={`mobile-nav ${open ? 'is-open' : ''}`}>
         <div className="shell">
