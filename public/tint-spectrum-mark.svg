@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 72" fill="none">
+  <path fill="#2F5FD0" d="M2 36c0-20 14-30 32-28 10 1 18 9 20 21 1 8-1 18-9 24-10 8-22 10-32 2-8-6-11-16-11-19z"/>
+  <path fill="#D0392F" d="M118 36c0-20-14-30-32-28-10 1-18 9-20 21-1 8 1 18 9 24 10 8 22 10 32 2 8-6 11-16 11-19z"/>
+  <path stroke="#2F5FD0" stroke-width="2.15" stroke-linecap="round" d="M60 10 40 26 60 36 38 48 60 62"/>
+  <path stroke="#D0392F" stroke-width="2.15" stroke-linecap="round" d="M60 10 80 26 60 36 82 48 60 62"/>
+  <circle cx="60" cy="10" r="4.1" fill="#2F5FD0"/>
+  <circle cx="60" cy="62" r="4.1" fill="#D0392F"/>
+  <circle cx="34" cy="22" r="3.5" fill="#2F5FD0"/>
+  <circle cx="28" cy="36" r="3.5" fill="#2F5FD0"/>
+  <circle cx="34" cy="50" r="3.5" fill="#2F5FD0"/>
+  <circle cx="86" cy="22" r="3.5" fill="#D0392F"/>
+  <circle cx="92" cy="36" r="3.5" fill="#D0392F"/>
+  <circle cx="86" cy="50" r="3.5" fill="#D0392F"/>
+  <path fill="#2F5FD0" d="M60 27 56 36 60 36 64 36 60 27ZM52 36l4 0 4-9-8 9Z"/>
+  <path fill="#D0392F" d="M68 36l-4 0-4-9 8 9ZM60 45l4-9-4-0-4 9 4 0Z"/>
+  <circle cx="60" cy="36" r="2.2" fill="#111"/>
+</svg>

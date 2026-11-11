@@ -1,0 +1,6 @@
+import Link from 'next/link';
+import { Logo } from './Logo';
+
+export function Footer() {
+  return <footer className="site-footer"><div className="shell"><div className="site-footer__top"><div><Logo /><p className="site-footer__tagline">Same story. Different tint.</p></div><div className="footer-links"><div><span className="footer-label">Explore</span><Link href="/">Home</Link><Link href="/sources">Sources</Link><Link href="/how-it-works">How it works</Link><Link href="/dome-gossip">Dome Gossip</Link></div><div><span className="footer-label">About</span><Link href="/about">Our approach</Link><Link href="/who-we-are">Who we are</Link><Link href="/contact">Contact</Link><Link href="/support">Support us</Link></div><div><span className="footer-label">Elsewhere</span><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Tint on Instagram">Instagram</a><a href="https://bsky.app/" target="_blank" rel="noopener noreferrer" aria-label="Tint on Bluesky">Bluesky</a><a href="mailto:hello@tint.news">hello@tint.news</a></div></div></div><div className="site-footer__bottom"><p>We are an aggregator, not a publisher. All articles belong to their original publishers.</p><span>© 2026 Tint</span></div></div></footer>;
+}

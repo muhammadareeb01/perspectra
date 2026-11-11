@@ -1,0 +1,7 @@
+{
+  "apphosting": {
+    "backendId": "perspectra-web",
+    "rootDir": "/",
+    "ignore": ["firebase-debug.log", "firebase-debug.*.log", "functions"]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  { "name": "BBC", "lean": "center", "factual": "High", "country": "United Kingdom", "note": "Strong sourcing and clear distinction between reporting and analysis." },
+  { "name": "Reuters", "lean": "center", "factual": "High", "country": "United Kingdom", "note": "Wire-service reporting with a strong corrections tradition." },
+  { "name": "AP", "lean": "center", "factual": "High", "country": "United States", "note": "Broadly cited wire coverage and transparent standards." },
+  { "name": "Al Jazeera", "lean": "center", "factual": "High", "country": "Qatar", "note": "Deep international reporting; framing can vary by region." },
+  { "name": "CNN", "lean": "left", "factual": "High", "country": "United States", "note": "Strong breaking-news operation with a visible opinion layer." },
+  { "name": "The Guardian", "lean": "left", "factual": "High", "country": "United Kingdom", "note": "Reliable reporting with an openly progressive editorial stance." },
+  { "name": "Fox News", "lean": "right", "factual": "Mixed", "country": "United States", "note": "News and opinion are clearly distinct in some sections and blended in others." },
+  { "name": "NY Post", "lean": "right", "factual": "Mixed", "country": "United States", "note": "Fast, vivid tabloid coverage; verify high-stakes claims." },
+  { "name": "RT", "lean": "right", "factual": "Low", "country": "Russia", "note": "State-funded outlet; independent verification is especially important." },
+  { "name": "Wall Street Journal", "lean": "right", "factual": "High", "country": "United States", "note": "Highly regarded business reporting with a conservative editorial page." }
+]

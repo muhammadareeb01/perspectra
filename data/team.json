@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Eli",
+    "role": "Graphics",
+    "country": "Czech Republic",
+    "countryCode": "CZ",
+    "avatar": "eli"
+  },
+  {
+    "name": "Hassan",
+    "role": "Concept lead",
+    "country": "Italy",
+    "countryCode": "IT",
+    "avatar": "hassan"
+  },
+  {
+    "name": "Areeb",
+    "role": "Developer & rewards",
+    "country": "Italy",
+    "countryCode": "IT",
+    "avatar": "areeb"
+  },
+  {
+    "name": "Yash",
+    "role": "Pitch & explainer",
+    "country": "Italy",
+    "countryCode": "IT",
+    "avatar": "yash"
+  },
+  {
+    "name": "Amir",
+    "role": "Developer & numbers",
+    "country": "Italy",
+    "countryCode": "IT",
+    "avatar": "amir"
+  },
+  {
+    "name": "Emre",
+    "role": "Storyteller",
+    "country": "Turkey",
+    "countryCode": "TR",
+    "avatar": "emre"
+  }
+]
