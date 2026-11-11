@@ -1,7 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-import { withBasePath } from '@/lib/base-path';
+import { FundingGoalProgress } from '@/components/FundingGoalProgress';
 import { recordSupportPledge } from '@/lib/support-pledge';
 import { useCallback, useEffect, useId, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -93,6 +92,7 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
               <p className="support-pop__lede">
                 Pick an amount in euros. We use it to add outlets, ship comparisons, and stay independent of ads.
               </p>
+              <FundingGoalProgress compact animate={open} />
             </div>
 
             <form className="support-pop__form" onSubmit={submit}>
@@ -131,10 +131,7 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
                   disabled={submitting}
                 />
               </div>
-              <p className="support-pop__hint muted">
-                No card charged yet — your pledge appears on the{' '}
-                <a href={withBasePath('/funding')}>Funding</a> page for everyone.
-              </p>
+              <p className="support-pop__hint muted">No card charged yet — your pledge counts toward our €12,000 goal on Support.</p>
               <button type="submit" className="button button--dark support-pop__cta" disabled={!canSubmit}>
                 {submitting ? 'Saving…' : 'Submit'}
               </button>
@@ -164,10 +161,7 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
             <p className="support-pop__thanks-note muted">
               We will wire real payments soon. For now, tell a friend to open a cluster they would usually skip.
             </p>
-            <Link className="button button--dark support-pop__cta" href="/funding" onClick={onClose}>
-              View funding list
-            </Link>
-            <button type="button" className="button button--surface support-pop__cta" style={{ marginTop: 10 }} onClick={onClose}>
+            <button type="button" className="button button--dark support-pop__cta" onClick={onClose}>
               Back to the news
             </button>
           </div>

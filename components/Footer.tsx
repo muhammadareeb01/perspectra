@@ -27,7 +27,7 @@ export function Footer() {
               <Link href="/who-we-are">Who we are</Link>
               <Link href={brand.contactPath}>{brand.contactLabel}</Link>
               <SupportUsLink />
-              <Link href="/funding">Funding list</Link>
+              <Link href="/support">Our €12k goal</Link>
             </div>
             <div>
               <span className="footer-label">Elsewhere</span>

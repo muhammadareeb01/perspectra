@@ -2335,6 +2335,34 @@ img { max-width: 100%; }
 .funding-table-wrap { padding: 8px 20px 16px; }
 .funding-empty { padding: 28px 8px; text-align: center; }
 .funding-back { margin: 8px 0 0; }
+.funding-goal__stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.funding-goal__stats p { margin: 0; }
+.funding-goal__cta { margin-top: 18px; }
+.funding-goal--compact { margin-top: 14px; text-align: left; }
+.funding-goal__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.funding-goal__raised {
+  font-family: var(--font-source-serif), Georgia, serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.progress-track--sm { height: 6px; }
 .reward-table { width: 100%; border-collapse: collapse; }
 .reward-table th, .reward-table td { border-bottom: 1px solid var(--line); padding: 15px 8px; text-align: left; font-size: 13px; }
 .reward-table th { color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
