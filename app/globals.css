@@ -1973,11 +1973,82 @@ img { max-width: 100%; }
 .reward-table th { color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 .reward-table th:first-child, .reward-table td:first-child { padding-left: 0; font-weight: 700; }
 .team-section.page-section { padding-top: clamp(40px, 6vw, 56px); padding-bottom: clamp(40px, 6vw, 56px); }
+.team-hero { padding-bottom: clamp(48px, 7vw, 72px); }
+.team-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 1.25fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+.team-hero__copy { min-width: 0; }
+.team-hero h1 { max-width: 18ch; }
+.team-hero__meta {
+  margin-top: clamp(22px, 3vw, 32px);
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  max-width: 36rem;
+}
+.team-hero__meta strong {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-source-serif), Georgia, serif;
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+}
+.team-hero__meta p {
+  margin: 0;
+  font-size: 13px;
+}
+.team-hero__crew {
+  min-width: 0;
+  padding-top: clamp(4px, 1vw, 28px);
+}
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px 14px; }
 .team-grid--crew {
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
   gap: 14px 12px;
   max-width: 720px;
+}
+.team-grid--hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 14px;
+  width: 100%;
+}
+.team-grid--hero .team-card {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.team-grid--hero .team-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+.team-card--compact {
+  padding: 0;
+}
+.team-card--compact .team-card__photo {
+  width: 100%;
+  max-width: 158px;
+  margin: 0 auto;
+  padding: 8px;
+}
+.team-card--compact .team-card__name {
+  font-size: 18px;
+  margin-top: 11px;
+}
+.team-card--compact .team-card__role {
+  font-size: 12px;
+  padding: 0 8px;
+  line-height: 1.35;
+}
+.team-card--compact .team-card__photo-flag {
+  width: 28px;
+  right: 6px;
+  bottom: 6px;
 }
 .team-card {
   padding: 11px 11px 12px;
@@ -2218,6 +2289,15 @@ img { max-width: 100%; }
   .site-footer__top .footer-links { margin-top: 35px; }
   .footer-links { gap: 18px; }
   .site-footer__bottom span { display: block; margin-top: 10px; }
+  .team-hero__grid { grid-template-columns: 1fr; }
+  .team-hero h1 { max-width: none; }
+  .team-grid--hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: none;
+  }
+  .team-card--compact .team-card__photo {
+    max-width: min(158px, 42vw);
+  }
   .team-grid, .team-grid--crew { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: none; }
   .team-card__photo { max-width: 100px; }
   .goal-list { grid-template-columns: 1fr; }

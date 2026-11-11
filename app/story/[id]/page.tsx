@@ -4,7 +4,11 @@ import { StoryCoverage } from '@/components/StoryCoverage';
 import { NewsImage } from '@/components/NewsImage';
 import { OutletTakeList } from '@/components/OutletTakeList';
 import { SectionHeading } from '@/components/SectionHeading';
-import { getStory } from '@/lib/data';
+import { getStory, stories } from '@/lib/data';
+
+export function generateStaticParams() {
+  return stories.map((story) => ({ id: String(story.id) }));
+}
 import { getOutletArticleUrl } from '@/lib/outlet-links';
 import type { Lean } from '@/lib/types';
 
