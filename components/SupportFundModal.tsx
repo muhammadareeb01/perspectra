@@ -164,7 +164,7 @@ export function SupportFundModal({ open, onClose }: SupportFundModalProps) {
             <p className="support-pop__thanks-note muted">
               We will wire real payments soon. For now, tell a friend to open a cluster they would usually skip.
             </p>
-            <Link className="button button--dark support-pop__cta" href={withBasePath('/funding')} onClick={onClose}>
+            <Link className="button button--dark support-pop__cta" href="/funding" onClick={onClose}>
               View funding list
             </Link>
             <button type="button" className="button button--surface support-pop__cta" style={{ marginTop: 10 }} onClick={onClose}>
